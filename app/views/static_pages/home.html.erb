@@ -1,10 +1,12 @@
 <%provide(:title,'Home')%>
-<h1>Sample App</h1>
-<p>
-Get help on the Ruby on Rails Tutorial at the
-<a href="http://railstutorial.jp/help">Rails Tutorial help page</a>.</br>
-To get help on this sample app, see the
-<a href="http://railstutorial.jp/book">Rails Tutorial book</a>.</br>
-random String</br>
-<%= getRandomString(10)%>
-</p>
+<h1>Welcome to the Sample App</h1>
+<div class= "center hero-unit">
+    <h2>
+        This is the home page for the
+        <a href="http://turtleup.net/">Turtle Up</a>
+        sample application
+    </h2>
+
+    <%= link_to "Sign up now", signup_path, class:"btn btn-large btn-primary"%>
+</div>
+<%= link_to image_tag("rails.png", alt:"turtleup"), 'http://turtleup.net/'%>
